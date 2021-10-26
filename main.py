@@ -26,16 +26,16 @@ def mcpi(N):
     #return p
 def check(x, y): #sunarthsh pou elegxei an to shmeio einai entos h ektos kuklou.
     distance = 0
-    if x < 50 and y < 50:
+    if x <= 50 and y <= 50:
         x = 50 - x
         y = 50 - y
-    elif x < 50 and y > 50:
+    elif x <= 50 and y >= 50:
         x = 50 - x
         y = y - 50
-    elif x > 50 and y > 50:
+    elif x >= 50 and y >= 50:
         x = x - 50
         y = y - 50
-    elif x > 50 and y < 50:
+    elif x >= 50 and y <= 50:
         x = x - 50
         y = 50 - y
     distance = x**2 + y**2 # puthagwreio thewrhma logw orthogwniou trigwnou
